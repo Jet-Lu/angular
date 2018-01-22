@@ -1,0 +1,256 @@
+.txt-center {
+    text-align: center;
+}
+
+.page-content {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    overflow: auto;
+    padding-bottom: 15px !important;
+    &.white {
+        padding: 0 26px;
+        background: #fff;
+    }
+}
+
+.nyfw-table.ui-datatable {
+    table {
+        border: 1px solid #e0e0e0;
+        border-top: 0;
+    }
+    .ui-datatable-thead {
+        tr>th {
+            height: 36px;
+            color: #000;
+            border: 0;
+        }
+    }
+    tr.ui-widget-content {
+        color: #555;
+        border: 0;
+        border-bottom: 1px dashed #c9c9c9;
+        &.ui-datatable-odd {
+            background: none;
+        }
+    }
+    th.ui-state-default {
+        background: #C4DFFA;
+    }
+    .ui-datatable-data {
+        tr>td {
+            border: 0;
+            height: 54px;
+        }
+    }
+}
+
+.form-textarea {
+    width: 100%;
+    resize: none;
+}
+
+.multi-dropdown {
+    width: 100% !important;
+    .ui-widget-header {
+        .ui-multiselect-filter-container {
+            width: 75%;
+            .ui-inputtext {
+                padding-left: 0.25em;
+            }
+            span.fa-search {
+                display: none;
+            }
+        }
+    }
+    .ui-multiselect-label {
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .ui-chkbox-box.ui-state-active {
+        border: 1px solid #999;
+        background: #999;
+        color: #fff;
+    }
+    .ui-state-highlight {
+        background: rgba(153, 153, 153, 0.6);
+    }
+    .ui-multiselect-panel {
+        width: 100%;
+        label {
+            margin: 0.2rem 0;
+        }
+    }
+}
+
+
+/* dialog中下拉框 */
+
+.gf-dialog {
+    .dropdown {
+        .ui-dropdown-trigger {
+            border: 0 none;
+            border-left: 1px solid #d6d6d6;
+        }
+    }
+    .multi-dropdown {
+        .ui-multiselect-trigger {
+            border: 0 none;
+            border-left: 1px solid #d6d6d6;
+        }
+    }
+}
+
+.dropdown {
+    height: 28px;
+    .ui-dropdown-item {
+        padding: 0.35em 0.25em;
+    }
+    .ui-state-highlight {
+        background: rgba(153, 153, 153, 0.6);
+    }
+    label.ui-dropdown-label {
+        height: 100%;
+        text-align: left;
+    }
+    .ui-dropdown-filter-container {
+        width: 100%;
+    }
+}
+
+.input-txt {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+}
+
+.form-spinner {
+    width: 100%;
+    .ui-spinner,
+    .ui-inputtext {
+        width: 100%;
+    }
+}
+
+.auto-complete {
+    width: 100%;
+    input {
+        height: 28px;
+        width: 100%;
+        line-height: 28px;
+    }
+    .ui-autocomplete-loader {
+        display: none;
+    }
+    .ui-autocomplete-list {
+        padding: .25em;
+    }
+    .ui-autocomplete-panel {
+        .ui-state-highlight {
+            color: #222;
+            border: 0 none;
+            background: rgba(153, 153, 153, 0.3);
+        }
+    }
+}
+
+.range-date-picker {
+    padding-right: 28px;
+    width: 100%;
+    input {
+        width: 100%;
+    }
+}
+
+.grid-table {
+    margin-top: 20px;
+    .ui-datatable-thead {
+        >tr,
+        >tr>th {
+            border: 0 none;
+            background-color: #f3f3f3;
+            color: #333;
+            font-size: 15px;
+            text-align: center;
+        }
+        >tr>th {
+            padding: .5em 0 !important;
+            border-style: initial !important;
+        }
+    }
+    .ui-selection-column {
+        .ui-chkbox-box,
+        .ui-radiobutton-box {
+            margin: 0 auto;
+        }
+    }
+    .ui-widget-content {
+        border: none;
+    }
+    tbody.ui-datatable-data {
+        >tr>td {
+            padding: .5em .3em;
+            border: 0 none;
+            border-bottom: 1px solid #e7e7e7;
+            text-align: center;
+            &.left {
+                text-align: left;
+            }
+            &.right {
+                text-align: right;
+            }
+        }
+        >tr.ui-datatable-odd {
+            background-color: #fff;
+        }
+        >tr:hover {
+            background-color: rgba(236, 247, 255, 0.8);
+        }
+        .link {
+            display: inline-block;
+            color: #64adeb;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        >tr.ui-widget-content.ui-state-highlight {
+            background-color: rgba(236, 247, 255, 0.8);
+            color: #222222;
+        }
+        .ui-chkbox-box.ui-state-active {
+            border: 1px solid #65acea;
+            background-color: #65acea;
+            color: #fff;
+        }
+    }
+}
+
+.nyfw-inputSwitch.ui-inputswitch {
+    border-color: #ccc;
+    border-radius: 14px;
+    background: #F8F8F8 !important;
+    color: #F8F8F8;
+    .ui-inputswitch-on {
+        background: transparent !important;
+    }
+    .ui-inputswitch-off {
+        background: transparent !important;
+    }
+    .ui-inputswitch-handle {
+        border: 0px !important;
+        background: #949494 !important;
+        border-radius: 10px;
+    }
+    &.ui-inputswitch-checked {
+        background: #DAEBFC !important;
+        .ui-inputswitch-on {
+            color: #DAEBFC !important;
+        }
+        .ui-inputswitch-handle {
+            background: #549BF6 !important;
+        }
+    }
+}
