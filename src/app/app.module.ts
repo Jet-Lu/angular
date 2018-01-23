@@ -6,12 +6,13 @@ import { AppRoutingModule } from './app.routes';
 import { NavComponent } from './layout/nav/nav.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
-
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    LayoutComponent,
     NavComponent,
     HeaderComponent,
     FooterComponent
