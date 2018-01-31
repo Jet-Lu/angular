@@ -1,0 +1,27 @@
+@color: #0aa;
+@bgcolor:#ccc;
+@default:#fff;
+
+.navbar {
+  overflow:hidden;
+  li {
+    list-style:none;
+    text-align:center;
+    p {
+      font-size:14px;
+
+    }
+    &.active {
+      color:@default;
+      background:#222;
+    }
+  }
+}
+
+.nav {
+  position:absolute;
+  left:0;
+  width:60px;
+  height:auto;
+  background:@bgcolor;
+}

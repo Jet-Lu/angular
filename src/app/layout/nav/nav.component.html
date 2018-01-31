@@ -1,3 +1,8 @@
-<p>
-  nav works!
-</p>
+<div class="nav">
+  <ul class="navbar">
+    <li *ngFor="let nav of navList">
+      <img [src]="nav.img" alt="" [routerLink]="nav.url" routerLinkActive="active">
+      <p>{{nav.name}}</p>
+    </li>
+  </ul>
+</div>
